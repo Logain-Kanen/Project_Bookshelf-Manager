@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Library Book Management System</h1>
+        <div class="section">
+            <input id="input" type="text">
+            <button onclick="addBookFront()">Add to Front</button>
+            <button onclick="addBookBack()">Add to Back</button>
+        </div>
+        <div class="section">
+            <button onclick="deleteBookFront()" class="remove-btn">Remove from Front</button>
+            <button onclick="deleteBookBack()" class="remove-btn">Remove from Back</button>
+        </div>
+        <div class="section">
+                <h2>Current Bookshelf</h2>
+                <ol id="output">
+
+                </ol>
+        </div>
+    </div>
+</body>
+</html>
